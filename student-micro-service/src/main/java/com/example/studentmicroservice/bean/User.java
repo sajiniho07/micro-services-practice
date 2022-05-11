@@ -1,15 +1,12 @@
 package com.example.studentmicroservice.bean;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.Size;
 
-@ApiModel(description = "All details about users.")
 @Entity
 public class User {
 
@@ -17,7 +14,6 @@ public class User {
     @GeneratedValue
     private Long id;
 
-    @ApiModelProperty(notes = "Name should have atleast 2 characters.")
     @Size(min = 2, message = "Name should have atleast 2 characters")
     private String firstName;
 
