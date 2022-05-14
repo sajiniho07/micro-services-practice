@@ -25,7 +25,6 @@ public class UserController {
         Stream<User> stream = StreamSupport.stream(userRepository.findAll().spliterator(), false);
         Stream<EntityModel<User>> entityModelStream = stream.map(EntityModel::of);
         List<EntityModel<User>> employees = entityModelStream.collect(Collectors.toList());
-
         return ResponseEntity.ok(CollectionModel.of(employees));
     }
 
