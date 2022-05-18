@@ -3,9 +3,6 @@ package com.example.studentmicroservice.controller;
 import com.example.studentmicroservice.bean.User;
 import com.example.studentmicroservice.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.hateoas.CollectionModel;
-import org.springframework.hateoas.EntityModel;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,11 +18,9 @@ public class UserController {
     private UserRepository userRepository;
 
     @GetMapping("/getUsersInfo")
-    public ResponseEntity<CollectionModel<EntityModel<User>>> getUsersInfo() {
+    public List<User> getUsersInfo() {
         Stream<User> stream = StreamSupport.stream(userRepository.findAll().spliterator(), false);
-        Stream<EntityModel<User>> entityModelStream = stream.map(EntityModel::of);
-        List<EntityModel<User>> employees = entityModelStream.collect(Collectors.toList());
-        return ResponseEntity.ok(CollectionModel.of(employees));
+        return stream.collect(Collectors.toList());
     }
 
 }
