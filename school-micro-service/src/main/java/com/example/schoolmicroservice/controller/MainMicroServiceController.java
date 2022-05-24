@@ -2,6 +2,7 @@ package com.example.schoolmicroservice.controller;
 
 import com.example.schoolmicroservice.bean.StudentInfo;
 import com.example.schoolmicroservice.proxy.ExamMicroServiceProxy;
+import com.example.schoolmicroservice.proxy.StudentMicroServiceProxy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,8 @@ public class MainMicroServiceController {
 
     @Autowired
     private ExamMicroServiceProxy examMicroServiceProxy;
+    @Autowired
+    private StudentMicroServiceProxy studentMicroServiceProxy;
 
     @GetMapping("/getStudentsInfo")
     public ResponseEntity<List<StudentInfo>> getUsersInfo() {
@@ -30,6 +33,11 @@ public class MainMicroServiceController {
         mergeInTheBaseList(studentInfos, usersExamNo);
         return ResponseEntity.ok(studentInfos);
 
+    }
+
+    @GetMapping("/doRibbonTest")
+    public String doRibbonTest() {
+        return studentMicroServiceProxy.doRibbonTest();
     }
 
     private void mergeInTheBaseList(List<StudentInfo> baseList, List<StudentInfo> extraData) {
@@ -42,6 +50,7 @@ public class MainMicroServiceController {
         }
     }
 
+    /* Feign method */
     private List<StudentInfo> getUsersExamInfos(List<StudentInfo> studentInfos) {
         List<Long> userIds = studentInfos.stream().map(StudentInfo::getId).collect(Collectors.toList());
         return examMicroServiceProxy.getStudentsExamNo(userIds);
