@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e858897-b496-4a56-b2e5-a194539b9d1b" name="Default Changelist" comment="separated micro services.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-api-gateway-server/src/main/java/com/example/springapigateway/ApiGatewayConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exam-micro-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/exam-micro-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exam-micro-service/src/main/java/com/example/exammicroservice/ExamMicroServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/exam-micro-service/src/main/java/com/example/exammicroservice/ExamMicroServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/limits-service/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/limits-service/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-micro-service/src/main/java/com/example/schoolmicroservice/SchoolMicroServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/school-micro-service/src/main/java/com/example/schoolmicroservice/SchoolMicroServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-api-gateway-server/src/main/java/com/example/springapigateway/SpringApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-api-gateway-server/src/main/java/com/example/springapigateway/SpringApiGatewayApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-cloud-config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-config-server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student-micro-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/student-micro-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/student-micro-service/src/main/java/com/example/studentmicroservice/StudentMicroServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/student-micro-service/src/main/java/com/example/studentmicroservice/StudentMicroServiceApplication.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +40,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-cloud-config-server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -71,6 +73,7 @@
       <workItem from="1652256724187" duration="78000" />
       <workItem from="1652506121031" duration="96000" />
       <workItem from="1652856497131" duration="629000" />
+      <workItem from="1654933199306" duration="2427000" />
     </task>
     <task id="LOCAL-00001" summary="thrd">
       <created>1652256766019</created>
