@@ -37,3 +37,7 @@ R
 .git-localconfig-repo/limits-service.properties,1\c\1cf653b266e3d39e58f978c4684e5df8539fb567
 —
 gstudent-micro-service/src/main/java/com/example/studentmicroservice/StudentMicroServiceApplication.java,b\e\bee287b10182a85671de4b4956d2d078fad23366
+J
+user-micro-service/pom.xml,1\2\12338c661b27e686603ba743420a447f34d3dd7e
+Q
+!spring-api-gateway-server/pom.xml,d\9\d9d26cf73d104dcde67e0f84bca92358bce0affe
