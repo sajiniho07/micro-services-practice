@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e858897-b496-4a56-b2e5-a194539b9d1b" name="Default Changelist" comment="" />
+    <list default="true" id="7e858897-b496-4a56-b2e5-a194539b9d1b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +70,7 @@
       <workItem from="1655379838463" duration="692000" />
       <workItem from="1655528969270" duration="2491000" />
       <workItem from="1655533560525" duration="2055000" />
-      <workItem from="1655809624732" duration="558000" />
+      <workItem from="1655809624732" duration="818000" />
     </task>
     <task id="LOCAL-00001" summary="thrd">
       <created>1652256766019</created>
@@ -91,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655809741285</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="separated micro services.">
+      <created>1655810414937</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655810414937</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
